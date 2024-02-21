@@ -1,0 +1,47 @@
+@tailwind base;
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    @apply relative box-border;
+  }
+
+  html {
+    /* color-scheme: dark; */
+    @apply overflow-x-clip scroll-smooth text-pretty tabular-nums antialiased;
+  }
+
+  body {
+    @apply min-h-[100svh];
+  }
+}
+
+@tailwind components;
+
+@layer components {
+}
+
+@tailwind utilities;
+
+@layer utilities {
+  .nobr {
+    white-space: nowrap;
+  }
+
+  .scrollbar-none {
+    scrollbar-width: none;
+  }
+
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+
+  summary.no-arrow {
+    list-style: none;
+  }
+
+  summary.no-arrow::-webkit-details-marker {
+    display: none;
+  }
+}
