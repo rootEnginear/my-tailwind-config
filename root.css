@@ -2,9 +2,9 @@
 
 @layer base {
   *,
-  *::before,
-  *::after {
-    @apply relative box-border;
+  ::before,
+  ::after {
+    @apply relative;
   }
 
   html {
