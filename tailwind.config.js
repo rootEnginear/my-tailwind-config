@@ -2,6 +2,14 @@
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
+    colors: {
+      inherit: "inherit",
+      transparent: "transparent",
+      current: "currentColor",
+      black: "#000",
+      white: "#fff",
+      // <COLORS>
+    },
     fontFamily: {
       sans: [
         "<FONT_NAME>",
@@ -49,12 +57,18 @@ export default {
         "Noto Color Emoji",
       ],
     },
-    colors: {
-      transparent: "transparent",
-      current: "currentColor",
-      black: "#000",
-      white: "#fff",
-      // <COLORS>
+    fontWeight: {
+      100: "100",
+      200: "200",
+      300: "300",
+      400: "400",
+      normal: "400",
+      500: "500",
+      600: "600",
+      700: "700",
+      bold: "700",
+      800: "800",
+      900: "900",
     },
     lineHeight: {
       DEFAULT: "1.5",
